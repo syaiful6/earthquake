@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  outline: none;
+  border: 1px solid scale-color($light-grey, $lightness: -5%, $saturation: -10%);
+  background: linear-gradient(
+    blacken($blue, 5%),
+    scale-color($blue, $lightness: -15%, $saturation: -15%)
+  );
+  color: $white;
+  fill: $white;
+  text-shadow: 0 1px 0 $white;
+  text-decoration: none !important;
+  user-select: none;
+  fill: scale-color($light-grey, $lightness: -27%);
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  transition-property: color, border-color, background, width, height;
+  -webkit-font-smoothing: subpixel-antialiased;
+  cursor: pointer;
+
+  &:hover {
+    border-color: scale-color($light-grey, $lightness: -5%, $saturation: -10%);
+    background: linear-gradient(
+      whiten($blue, 5%),
+      scale-color($blue, $lightness: -15%, $saturation: -15%)
+    );
+  }
+}
