@@ -10,7 +10,7 @@ export const EXPANSION = 4;
 export const READY = 5;
 export const SET_FILTER = 6;
 
-const worker = new PromiseWorker(new Worker('/assets/worker.js'));
+const worker = new PromiseWorker(new Worker('./assets/worker.js'));
 
 export function iniMap(map, markers) {
   return {
